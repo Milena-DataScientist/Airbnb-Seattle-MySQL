@@ -46,4 +46,14 @@ Answer: No relation or pattern exists between the occupancy rate and the number 
 
 ## Conclusion
 
-This project involved cleaning and preparing data in Python and storing it in a MySQL database. The cleaned data was then used to answer business questions. Each question was translated into language that was best interpreted for technical and business persons before the query was performed. The analysis provided insights into the relationship between variables and can be used to inform business decisions.
+This project involved cleaning and preparing data in Python and storing it in a MySQL database. The cleaned data was then used to answer business questions. Each question was translated into language that was best interpreted for technical and business persons before the query was performed.
+
+The analysis provided the following insights:
+
+1. The daily price of a property tends to increase with the number of bedrooms, with a few outliers that were part of hostel/hotel properties.
+2. Weekly prices are generally lower for properties with fewer bedrooms.
+3. The total fees (security deposit and cleaning fee) for a property do not have a significant impact on its review score.
+4. The cleaning and security fees tend to increase as the daily price of the property increases.
+5. The number of extra guests a property can accommodate does not have a significant impact on its occupancy rate.
+
+These insights can be used to inform business decisions, such as pricing strategies, fee structures, and occupancy management.
