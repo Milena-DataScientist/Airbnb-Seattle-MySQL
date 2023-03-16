@@ -1,7 +1,9 @@
 ------ Air BnB Seattle Project Queries ----------
 
 -- Question 1 :  Daily prices can be higher for properties with more bathrooms
+
 USE airbnb_seatle;
+
 SELECT 
     a.bathrooms, ROUND(AVG(c.price), 2) AS 'average_price'
 FROM
@@ -13,7 +15,7 @@ ORDER BY a.bathrooms DESC;
  
  
 -- Question 2: Weekly prices can be lower for properties with lesser bedrooms
-USE airbnb_seatle;
+
 SELECT 
     a.bedrooms,
     ROUND(AVG(c.weekly_price), 2) AS 'weekly_average_price'
@@ -26,7 +28,6 @@ ORDER BY a.bedrooms ASC;
 
 
 -- Question 3: Lower security deposits and cleaning fees lead to better review scores
-USE airbnb_seatle;
 
 SELECT 
     (c.security_deposit + c.cleaning_fee) AS 'security_deposit_and_cleaning_fee',
@@ -40,6 +41,7 @@ ORDER BY security_deposit_and_cleaning_fee ASC;
 
 
 -- Question 4: Properties with higher daily prices also charge higher security deposits and cleaning fees
+
 SELECT 
     *
 FROM
@@ -66,8 +68,7 @@ GROUP BY c.price_range
 ORDER BY average_total_fee;
 
 
--- Question 8: Properties allowing higher number of extra people have higher occupancy rates
-
+-- Question 5: Properties allowing higher number of extra people have higher occupancy rates
 
 SELECT 
     (a.accommodates - c.guests_included) AS 'extra_people',
